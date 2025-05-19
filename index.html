@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>نمودار و سیگنال‌دهی</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>📊 نمودار حجم ارزهای بایننس + سیگنال</h2>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="جستجوی جفت‌ارز..." />
+    <select id="interval">
+      <option value="1m">1 دقیقه</option>
+      <option value="5m">5 دقیقه</option>
+      <option value="15m" selected>15 دقیقه</option>
+    </select>
+  </div>
+
+  <ul id="pair-list"></ul>
+
+  <div class="signal-now" id="signalNow">
+    🔍 منتظر بررسی داده‌ها...
+  </div>
+
+  <div class="chart-box">
+    <canvas id="chartCanvas" height="400"></canvas>
+  </div>
+
+  <div class="signal-log">
+    <h3>📜 سیگنال‌های صادر شده</h3>
+    <ul id="signalList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

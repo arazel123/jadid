@@ -1,0 +1,66 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Vazirmatn', sans-serif;
+  padding: 20px;
+  direction: rtl;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+#pair-list {
+  list-style: none;
+  background: #1e1e1e;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  padding: 5px;
+}
+
+#pair-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#pair-list li:hover {
+  background: #2e2e2e;
+}
+
+.signal-now {
+  background: #2b2b2b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #0ff;
+}
+
+.signal-log {
+  margin-top: 20px;
+}
+
+.signal-log ul {
+  list-style: none;
+  padding: 0;
+}
+
+.signal-log li {
+  background: #1a1a1a;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border-right: 4px solid cyan;
+}
