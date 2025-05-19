@@ -1,6 +1,6 @@
 let allSymbols = [];
 let currentChart;
-let currentSymbol = "BTCUSDT";
+let currentSymbol = "XRPUSDT";
 
 async function getUSDTTradingPairs() {
   const res = await fetch('https://api.binance.com/api/v3/exchangeInfo');
